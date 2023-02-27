@@ -31,7 +31,7 @@ export type Maybe<T> = null | undefined | T
 
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
 
-export type BaseScalars = 'String' | 'Int' | 'Float' | 'ID' | 'Boolean'
+export type BaseScalars = 'String' | 'Int' | 'Float' | 'ID' | 'Boolean' | 'BigInt'
 
 export enum NexusTypes {
   Arg = 'Arg',

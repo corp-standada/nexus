@@ -693,6 +693,9 @@ export class OutputDefinitionBlock<TypeName extends string> {
   float<FieldName extends string>(name: FieldName, ...config: ScalarOutSpread<TypeName, FieldName>) {
     this.addScalarField(name, 'Float', config)
   }
+  bigint<FieldName extends string>(name: FieldName, ...config: ScalarOutSpread<TypeName, FieldName>) {
+    this.addScalarField(name, 'BigInt', config)
+  }
 
   /**
    * [GraphQL 2018 Spec](https://spec.graphql.org/June2018/#sec-Language.Fields)
